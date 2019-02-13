@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    height: 6000px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+nav {  
+    position: fixed!important;
+    width: 100%;
+}
+.bg-dark {
+    background: #111111!important;    
+}
+.nav-logo {
+    top: 0;
+    transform: translate(0, 5px);
+    background: url(/img/logocodellege.png);
+    height: 45px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.nav-link:hover {
+  color: #95C11F!important;
+}
+
+.bg-img {
+
+    height: calc(100vh - 61px);
+    background: url(/img/DSC_0011.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+}
+
+.about {
+    background-color: #2B2B2B;
+    padding: 30px;
+}
+
+.about .bg-img-a {
+    background: url(/img/DSC_0025.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 30px;
+    text-align: center;
+    color: white;
+}
+
