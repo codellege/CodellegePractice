@@ -5,22 +5,28 @@
     scroll-behavior: smooth;
 }
 
-body {
-    
-    height: 6000px;
-}
-
 h1 {
     font-size: 2em;
 }
 
-nav {  
-    position: fixed!important;
+p {
+    font-weight: 100;
+}
+
+p span {
+    font-weight: bold;
+}
+
+nav {
+    position: fixed !important;
     width: 100%;
+    z-index: 3;
 }
+
 .bg-dark {
-    background: #111111!important;    
+    background: #111111 !important;
 }
+
 .nav-logo {
     top: 0;
     transform: translate(0, 5px);
@@ -37,7 +43,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #95C11F!important;
+    color: #95C11F !important;
 }
 
 .bg-img {
@@ -70,3 +76,270 @@ nav {
     color: white;
 }
 
+.projection {
+    background: url(/img/DSC_0010.jpg);
+    padding: 150px 60px;
+    color: white;
+    text-align: center;
+}
+
+.normal-row {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-guy {
+    background: url(/img/Recurso1@3x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+
+.normal-column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.normal-column h2 {
+    font-size: 1em;
+}
+
+.normal-column a {
+    color: #537004 !important;
+    font-size: 2em;
+}
+
+.normal-column div {
+    height: 60px;
+    width: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+}
+
+.my-job {
+    background: url(/img/Recurso2@3x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
+
+.my-arrow {
+    position: absolute;
+    background: url(/img/Recurso3@3x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 40%;
+    left: 50%;
+    transform: translate(-50%, -140px);
+}
+
+.plan {
+    background: url(/img/cgllg3.jpg);
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.plan ul {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.plan ul li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.plan h2 {
+    margin: 50px 0;
+}
+
+
+.plan ul li .img-plan {
+    position: relative;
+
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-size: contain;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.plan ul li h2 {
+    font-size: 1em;
+
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.plan ul li p {
+    font-size: 1em;
+}
+
+.plan ul li:nth-of-type(1) .img-plan {
+    background-image: url(/img/work-area2.png);
+}
+
+.plan ul li:nth-of-type(2) .img-plan {
+    background-image: url(/img/work-area3.png);
+}
+
+.plan ul li:nth-of-type(3) .img-plan {
+    background-image: url(/img/Recurso7@3x.png);
+}
+
+.plan ul li:nth-of-type(4) .img-plan {
+    background-image: url(/img/work-area1.png);
+}
+
+.patrons {
+    padding: 30px;
+    color: white;
+    background: url(/img/20jun_bannerweb.png);
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.patrons .brands {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.patrons .brand {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+}
+
+.patrons .brand:nth-child(1) {
+    background-image: url(/img/logo_hp.png);
+}
+
+.patrons .brand:nth-child(2) {
+    background-image: url(/img/logo_softtek.png);
+}
+
+.patrons .brand:nth-child(3) {
+    background-image: url(/img/logo_prospera.png);
+}
+
+.contact {
+    background-image: url(/img/DSC_0025.jpg);
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.contact .stack {
+    display: flex;
+    font-display: row;
+    justify-content: space-between;
+}
+
+.contact .column {
+    width: 50%;
+    margin: 50px 10px;
+
+}
+
+.contact .column:nth-child(1) {
+    text-align: right;
+}
+
+.contact .column:nth-child(1) h4,
+.contact .column:nth-child(1) h6,
+.contact .column:nth-child(1) div {
+    padding: 4px;
+}
+
+.contact .column:nth-child(1) div * {
+    position: relative;
+    display: inline-block;
+}
+
+.contact .facebook-link a {
+    background: #7FBC03;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.contact .column:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .column:nth-child(2) * {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    width: 50%;
+}
+
+.contact .column:nth-child(2) input {
+    height: 30px;
+}
+
+.contact .send {
+    position: relative;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    right: 0;
+}
+
+.alert {
+    position: relative;
+    transform: translate( 5px , 45px);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline!important;
+    color: #7FBC03!important;
+}
+
+.contact .send a {
+    
+    line-height: 20px;
+    text-align: center !important;
+
+    position: absolute;
+    right: 0;
+    
+    width: 100px !important;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #7FBC03 !important;
+    color: #7FBC03;
+
+}
