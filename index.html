@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Codellege</title>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -15,47 +15,169 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.bundle.min.js" integrity="sha384-VoPFvGr9GxhDT3n8vqqZ46twP5lgex+raTCfICQy73NLhN7ZqSfCtfSn4mLA2EFA"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
+
+    <!-- I HAVE SEPARATED THE CSS RULES INTO DIFERENT FILES BY SECTION -->
+
+    <link rel="stylesheet" href="css/gotop.css"><!-- GO TO TOP BUTTON CIRCLE-->
+    <link rel="stylesheet" href="css/navmenu.css"><!-- NAVIGATION BAR -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--PARALLAX LANDING "Gracias por tu interés."-->
+    <link rel="stylesheet" href="css/about.css"><!-- ABOUT SECTION "¿POR QUÉ CODELLEGE?" -->
+    <link rel="stylesheet" href="css/projection.css"><!-- PROJECTION SECTION "¿CÓMO FUNCIONA?" -->
+    <link rel="stylesheet" href="css/plan.css"><!-- PROJECTION SECTION "¿CÓMO FUNCIONA?" -->
+    <link rel="stylesheet" href="css/patrons.css"><!-- PATRONS SECTION "ALIADOS" -->
+    <link rel="stylesheet" href="css/contact.css"><!-- CONTACT SECTION "¿QUIERES CONVERSAR CON NOSOTROS?" -->
+
+
+    <link rel="stylesheet" href="css/style.css"><!-- GLOBAL -->
+
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand nav-logo" href="#"></a>
+    <!-- THE GO TO THE TOP BUTTON
+    
+    --------------------------------------------------------------------
+    |             BRAND    LINK   LINK   LINK   LINK   LINK            |
+    --------------------------------------------------------------------
+    |                                                                | |
+    |                                                                |||
+    |                                                                |||   THE SCROLLER GOES ALL THE WAY UP
+    |                                                                |||
+    |                                                                |||
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                           THE PAGE                             | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                                                | |
+    |                                            THIS BUTTON =>  (^) | |  TAKES YOU TO MAIN WHICH IS THE TOP
+    --------------------------------------------------------------------
+    
+    
+    -->
+    <div class="go-top">
+        <a href="#main"><i class="fas fa-chevron-up"></i></a>
+    </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!--THE START OF THE NAV BAR 
+        
+        -NOTES:
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link link" href="#about">¿Porque Codellege? <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item link">
-                    <a class="nav-link" href="#projection">¿Como funciona?</a>
-                </li>
-                <li class="nav-item link">
-                    <a class="nav-link" href="#plan">¿Que Aprenderas?</a>
-                </li>
-                <li class="nav-item link">
-                    <a class="nav-link" href="#patrons">Aliados</a>
-                </li>
-                <li class="nav-item link">
-                    <a class="nav-link" href="#">Contactos</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        I USED TWITTER BOOSTRAP 4 WHICH IS JUST A CSS STYLING LIBRARY
+        FOR ALL THE DOCUMENTATION ON BOSTRAP NAVBARS READ 
+        https://getbootstrap.com/docs/4.3/components/navbar/ -->
 
-    <div class="bg-img">
+    <div class="nav-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+            <!-- 
+                    --------------------------------------------------------------------
+            
+                                LOGO BRAND  LINK LINK LINK LINK LINK LINK                       [MENU] IS HIDDEN
+            
+                    -------------------------------------------------------------------- 
+                    -->
+
+            <!-- THE LOGO GOES INTO THE <a> ELEMENT USING CSS -->
+            <a class="navbar-brand nav-logo" href="#"></a>
+
+
+
+            <!-- NOW WE HAVE THE MOBILE MENU BUTTON IT WONT SHOW ON LARGE AND EXTRA LARGE SCREENS -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- IN THIS <div> WE HAVE ALL THE LINKS AND IT WILL COLLAPSE ON MOBILE SCREENS
+                        IT CAN BE EXTENDED USING THE BTN ABOVE-->
+
+            <!-- 
+                    --------------------------------------------------------------------
+            
+                                                LOGO BRAND                        [MENU]
+            
+                    -----------------------------Collapse-------------------------------
+                        SOME IMPORTANT LINK
+                        SOME IMPORTANT LINK
+                        SOME IMPORTANT LINK 
+                        SOME IMPORTANT LINK 
+                        SOME IMPORTANT LINK
+                    -------------------------------------------------------------------- 
+                    -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link link" href="#about">¿Porque Codellege? <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link" href="#projection">¿Como funciona?</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link" href="#plan">¿Que Aprenderas?</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link" href="#patrons">Aliados</a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div> <!-- END OF NAVBAR-->
+
+    <!-- THE START OF THE PARALLAX LANDING 
+    
+    I USED A DIV AND FILLED IT WITH THE BACKGROUND IMAGE USING CSS
+    THE WHOLE TEXT IS A H1 AND I USED BREAKS <br> TO SPLIT IT ON D-
+    FERENT ROWS
+
+    REMEMBER:
+
+    ROW ===        COLUMN      COLUMN
+                      =           =
+    ROW ===           =           =
+
+    -->
+
+    <div class="main bg-img" id="main">
         <h1>Gracias por tu interés. <br>
             Actualmente no estamos recibiendo aplicaciones.<br>
             Síguenos en Facebook para saber cuándo se abre nuevamente la convocatoria.</h1>
-    </div>
+    </div> <!-- END OF PARALLAX LANDING -->
+
+
+    <!-- THE NEXT SECTION IS JUST A IMAGE WITH A DARKER FRAME
+    
+    THE SECTION <section> HAS AN ID ABOUT SO THAT WHEN I LINK 'HREF'
+    ="#ABOUT" THE PAGE WILL SCROLL TO THIS SECTION
+
+    <element href="#id or directory or link"> </element>
+
+    THE SECTION HAS A PADDING OF 15PX WITCH IS ACTING AS THE FRAME
+    AND INSIDE I HAVE A DIV <div> I USED CSS TO ADD THE BACKGROUND
+    AND ALIGNED ITS CONTENTS TO THE CENTER 
+
+
+                        HERE IS THE CENTER
+
+    -->
+
     <section class="about" id="about">
         <div class="bg-img-a">
             <h2>¿POR QUÉ CODELLEGE?</h2>
@@ -63,33 +185,128 @@
             <p>Nuestros esfuerzos van hacia jóvenes con talento e interés para programar, pero que por razones y
                 situaciones externas no han podido acceder a esta educación</p>
         </div>
-    </section>
+    </section> <!-- END OF THIS SECTION -->
+
+    <!-- PROJECTION OR THE HARDEST SECTION:
+    THE SECTION HAS A CSS IMAGE BG (BG STANDS FOR BACKROUND) 
+    FOR THIS SECTION I USED FLEX BOX AGAIN
+
+    THE TITLE THE PARAGRAPH AND THEN TWO DIVS ARE ON THE FIRST LEVEL
+
+    -----------------------------------------
+                    TITLE
+    -----------------------------------------
+                    TEXT
+    -----------------------------------------
+     THE MAN | THE 5 | THE 4 | THE PORTFOLIO
+    -----------------------------------------
+            V------ARROW-------V
+
+    -->
+
+
     <section class="projection" id="projection">
+
+        <!-- TITLE -->
         <h2>¿CÓMO FUNCIONA?</h2>
+        <!-- TEXT AND SPANS ARE BOLDER TEXT-->
         <p>Vamos más allá de solo enseñarte programación; te preparamos integralmente para que puedas transformar tu
             vida en la industria de las Tecnologías de la Información.</p>
         <p>Actualmente impartimos cursos en <span>Monterrey</span> , <span>Aguascalientes</span> y <span>Guadalajara</span>.</p>
 
+        <!--  THE MAN | THE 5 | THE 4 | THE PORTFOLIO -->
+
         <div class="normal-row">
+
+            <!-- THE MAN -->
             <div class="my-guy hidder-mobile d-none d-lg-block"></div>
+
+
+            <!--
+                THE 5 THING IS EDITED WITH FLEX
+
+                 |    THE 5    | ....LOOK AT THE <div>
+                 | SOME TEXT   | ....LOOK AT THE <h2>
+                
+            -->
             <div class="normal-column">
                 <div><a>5</a></div>
                 <h2>Meses</h2>
             </div>
+
+
+            <!--
+                THE 4 THING IS EDITED WITH FLEX
+
+                 |    THE 4    | ....LOOK AT THE <div>
+                 | SOME TEXT   | ....LOOK AT THE <h2>
+                
+            -->
             <div class="normal-column">
                 <div><a>4</a></div>
                 <h2>Horas Diarias</h2>
             </div>
+
+            <!-- THE PORTFOLIO -->
             <div class="my-job hidder-mobile d-none d-lg-block"></div>
         </div>
+
+        <!--
+            
+            V------ARROW-------V  
+            -NOTE:
+             CSS SHIFTS IT UPWARDS         
+        -->
         <div class="high-row">
             <div class="my-arrow hidder-mobile d-none d-lg-block"></div>
         </div>
-    </section>
+    </section><!-- END OF THIS SECTION -->
+
+
+
+    <!-- THE PLANING SECTION
+    THE SECTION IS JUST A TITLE AND A GRID
+
+    ----------------------------------------
+                  SOME TITLE
+    ----------------------------------------
+
+
+           ITEM   ITEM   ITEM   ITEM
+
+
+    ----------------------------------------
+
+-->
     <section class="plan" id="plan">
+        <!-- THE TITLE -->
         <h2> ¿QUÉ APRENDERÁS?</h2>
-        <div class="sorter">
+
+        <!-- THE GRID -->
+        <div>
+            <!-- <div> CONTAINS THE GRID CENTERS AND SPACES AROUND-->
             <ul>
+                <!--  <ul>  ROW FLEX
+                            ITEM ONE    ITEM TWO    ITEM ETC
+                -->
+
+                <!-- <li> LIST ITEMS FLEX COLUMN
+
+                            -----------
+
+
+
+                            <div>IMAGE
+
+
+
+                            -----------
+                            <h2>TITLE
+                            -----------
+                            <p> TEXT
+                            -----------
+                    
+                -->
                 <li>
                     <div class="img-plan"></div>
                     <h2>Programación Web</h2>
@@ -112,7 +329,22 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section><!-- END OF THIS SECTION -->
+
+    <!-- PATRONS MEANS SPONSORS AND THERE YOU GO THE NAME OF THIS SECTION
+         
+         I IMAGINED THE LAYOUT LIKE THIS :
+
+        --------------------------------------------------------------------
+                                        SOME TITLE
+        ---------------------------------- brands --------------------------
+
+                 BRAND ONE       BRAND TWO      BRAND THREE     ETC
+
+        --------------------------------------------------------------------
+
+        -->
+
     <section class="patrons" id="patrons">
         <h2>ALIADOS</h2>
         <div class="brands">
@@ -120,10 +352,28 @@
             <div class="brand"></div>
             <div class="brand"></div>
         </div>
-    </section>
+    </section><!-- END OF THIS SECTION -->
+
+    <!-- THE CONTACT IS JUST TWO COLUMNS AND A LOT OF ROWS ON THOSE COLUM
+    NS, ALSO NOTE THAT BOTH COLUMNS ARE CENTERED BUT THE LEFT ONE HAS A T
+    EXT ALIGNMENT TO THE RIGHT
+
+    --------------------------------------------------------------------
+
+                                SOME TITLE
+
+    --------------------------------------------------------------------
+                    SOME COLUMN ITEM   SOME COLMN ITEM
+                                ITEM   ITEMITEMITEMITE
+    --------------------------------------------------------------------
+    -->
+
+
     <section class="contact" id="contact">
         <h2>¿QUIERES CONVERSAR CON NOSOTROS?</h2>
         <div class="stack">
+
+            <!-- LEFT COLUMN -->
             <div class="column">
                 <h4>Llena este formulario o escríbenos a </h4>
                 <h4>info@codellege.com</h4>
@@ -133,16 +383,19 @@
                     <h6>Codellege</h6>
                 </div>
             </div>
+
+            <!-- RIGHT COLUMN -->
             <div class="column">
                 <input type="text" placeholder="Nombre">
                 <input type="text" placeholder="Email">
                 <input type="text" placeholder="Asunto">
                 <textarea name="" id="" rows="3" placeholder="Mensaje"></textarea>
-                <div class="send"><a>Enviar</a></div> 
+                <div class="send"><a>Enviar</a></div>
                 <a class="alert">Aviso de Privacidad</a>
             </div>
         </div>
-    </section>
+    </section><!-- END OF THIS SECTION -->
+
 </body>
 
 </html>

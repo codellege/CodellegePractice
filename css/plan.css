@@ -1,0 +1,65 @@
+
+.plan {
+    background: url(/img/cgllg3.jpg);
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.plan ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.plan ul li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.plan h2 {
+    margin: 50px 0;
+}
+
+
+.plan ul li .img-plan {
+    position: relative;
+
+    height: 150px;
+    width: 150px;
+    background-position: center;
+    background-size: contain;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.plan ul li h2 {
+    font-size: 1em;
+
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.plan ul li p {
+    font-size: 1em;
+}
+
+.plan ul li:nth-of-type(1) .img-plan {
+    background-image: url(/img/work-area2.png);
+}
+
+.plan ul li:nth-of-type(2) .img-plan {
+    background-image: url(/img/work-area3.png);
+}
+
+.plan ul li:nth-of-type(3) .img-plan {
+    background-image: url(/img/Recurso7@3x.png);
+}
+
+.plan ul li:nth-of-type(4) .img-plan {
+    background-image: url(/img/work-area1.png);
+}

@@ -1,0 +1,14 @@
+
+.about {
+    background-color: #2B2B2B;
+    padding: 30px;
+}
+
+.about .bg-img-a {
+    background: url(/img/DSC_0025.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 120px 30px;
+    text-align: center;
+    color: white;
+}

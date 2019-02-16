@@ -1,0 +1,98 @@
+
+.contact {
+    background-image: url(/img/DSC_0025.jpg);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .stack {
+    display: flex;
+    font-display: row;
+    justify-content: space-between;
+}
+
+.contact .column {
+    width: 50%;
+    margin: 50px 10px;
+
+}
+
+.contact .column:nth-child(1) {
+    text-align: right;
+}
+
+.contact .column:nth-child(1) h4,
+.contact .column:nth-child(1) h6,
+.contact .column:nth-child(1) div {
+    padding: 4px;
+}
+
+.contact .column:nth-child(1) div * {
+    position: relative;
+    display: inline-block;
+}
+
+.contact .facebook-link a {
+    background: #7FBC03;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.contact .column:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .column:nth-child(2) * {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    width: 50%;
+}
+
+.contact .column:nth-child(2) input {
+    height: 30px;
+}
+
+.contact .send {
+    position: relative;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    right: 0;
+}
+
+.alert {
+    position: relative;
+    transform: translate(5px, 45px);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline !important;
+    color: #7FBC03 !important;
+}
+
+.contact .send a {
+
+    line-height: 20px;
+    text-align: center !important;
+
+    position: absolute;
+    right: 0;
+
+    width: 100px !important;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #7FBC03 !important;
+    color: #7FBC03;
+
+}

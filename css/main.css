@@ -1,0 +1,18 @@
+
+
+.main.bg-img {
+
+    height: calc(100vh);
+    background: url(/img/DSC_0011.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+}
+
