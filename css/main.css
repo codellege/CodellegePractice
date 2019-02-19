@@ -16,3 +16,11 @@
     color: white;
 }
 
+
+.main.bg-img h1 span{
+background: #4267B2;
+padding: 0 10px;
+border-radius: 5px;
+font-weight: bold;
+}
+
